@@ -1,11 +1,19 @@
+/*
+ * Entry Point
+ *
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import { Provider } from 'react-redux';
+
+/*
+ * Redux Dependencies
+ */
 import { createStore } from 'redux';
 import rootReducer from './reducers';
+import { Provider } from 'react-redux';
 
 const store = createStore(rootReducer);
 
