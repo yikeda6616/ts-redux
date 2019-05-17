@@ -5,6 +5,8 @@ type Props = {
 };
 
 type State = {
+  // Inputの中身を保持するためにStateを持つことにする。
+  // Reduxに逃してもいい。
   value: string;
 };
 
