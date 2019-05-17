@@ -12,7 +12,7 @@ export interface AddTodoAction extends Action {
 
 export const addTodo = (payload: AddTodoPayload): AddTodoAction => {
   return {
-    payload,
-    type: 'ADD_TODO'
+    type: 'ADD_TODO',
+    payload
   };
 };

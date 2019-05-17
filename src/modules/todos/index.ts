@@ -39,6 +39,7 @@ export const reducer = (state: State = init(), action: Actions) => {
           return e.id !== action.payload.id
             ? e
             : {
+                // 対象のidだけcompletedを反転 TODO: ここのロジックをuuidに変更
                 ...e,
                 completed: !e.completed
               };
